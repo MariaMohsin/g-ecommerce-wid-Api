@@ -1,15 +1,24 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
+import locaFont from 'next/font/local';
+import { Montserrat } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+
+// Correctly set up the local font using next/font/local
+// const montserrat = locaFont({
+//   src: "./font/Montserrat-Bold.ttf", // Fixed incorrect property name
+//   variable: "--montserrat",
+// });
+
+// Uncomment and configure Google Font Montserrat if needed
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
@@ -25,9 +34,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} antialiased`}
       >
+
+
         {children}
+      
+      
+        <Footer />
       </body>
     </html>
   );
