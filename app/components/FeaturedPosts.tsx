@@ -84,28 +84,28 @@ const FeaturedPosts = () => {
   }, []);
   const posts: PostProps[] = [
     {
-      title: "Loudest à la Madison #1 (L’integral)",
+      title: "Loudest &agrave; la Madison #1 (L&rsquo;integral)",
       image: "/image9.png",
       description:
-        "We focus on ergonomics and meeting you where you where you work. It’s only a keystroke away.",
+        "We focus on ergonomics and meeting you where you where you work. Its only a keystroke away.",
       date: "22 April 2021",
       comments: 10,
       url: "/post1",
     },
     {
-      title: "Loudest à la Madison #2 (L’integral)",
+      title: "Loudest &agrave; la Madison #2 (L&rsquo;integral)",
       image: "/image10.png",
       description:
-        "We focus on ergonomics and meeting you where you where you work. It’s only a keystroke away.",
+        "We focus on ergonomics and meeting you where you where you work. Its only a keystroke away.",
       date: "23 April 2021",
       comments: 5,
       url: "/post2",
     },
-    {
-      title: "Loudest à la Madison #2 (L’integral)",
+    {   
+       title: "Loudest &agrave; la Madison #1 (L&rsquo;integral)",
       image: "/image11.png",
       description:
-        "We focus on ergonomics and meeting you where you where you work. It’s only a keystroke away.",
+        "We focus on ergonomics and meeting you where you where you work. Its only a keystroke away.",
       date: "23 April 2021",
       comments: 5,
       url: "/post2",

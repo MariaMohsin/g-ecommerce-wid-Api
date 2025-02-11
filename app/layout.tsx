@@ -1,20 +1,15 @@
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
-import locaFont from 'next/font/local';
 import { Montserrat } from 'next/font/google';
 
 
 
-// Correctly set up the local font using next/font/local
-// const montserrat = locaFont({
-//   src: "./font/Montserrat-Bold.ttf", // Fixed incorrect property name
-//   variable: "--montserrat",
-// });
 
-// Uncomment and configure Google Font Montserrat if needed
+
+
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700'],

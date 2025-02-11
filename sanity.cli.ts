@@ -24,7 +24,7 @@ if (!projectId || !dataset) {
 export const sanityClient = createClient({
   projectId,
   dataset,
-  apiVersion: "2023-01-01", // Use your desired API version
+  apiVersion: "2024-02-06", // Use your desired API version
   useCdn: false, // Set to `true` if you don't need draft content
   token: process.env.token ,// Only include this if you need to fetch private or draft content
 });

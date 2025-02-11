@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Products } from "@/sanity/lib/data";
-import { Heart, ShoppingCart } from "lucide-react";
+import { Heart } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -123,14 +123,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                   </div>
                 )}
               </CardContent>
-{/* 
-              <CardFooter className="p-4 pt-0">
-                <Button className="w-full gap-2">
-                  <ShoppingCart className="h-4 w-4" />
-                  Add to Cart
-                </Button>
-              </CardFooter> */}
-
+              
               <AddToCartButton
               product={{
                 productId: product._id,
