@@ -1,4 +1,3 @@
-import React, { Suspense } from "react";
 import SecondaryNavbar from "../components/Navbar";
 import { getAllProducts } from "@/sanity/lib/data";
 import ProductList from "../components/ProductList";
